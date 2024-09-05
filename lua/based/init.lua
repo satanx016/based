@@ -23,8 +23,8 @@ for _, value in ipairs(config.based.integrations) do
 end
 
 M.get_theme_tb = function(type)
-  local default_path = "based.themes." .. config.ui.theme
-  local user_path = "themes." .. config.ui.theme
+  local default_path = "based.themes." .. config.based.theme
+  local user_path = "themes." .. config.based.theme
 
   local present1, default_theme = pcall(require, default_path)
   local present2, user_theme = pcall(require, user_path)
@@ -72,7 +72,7 @@ M.extend_default_hl = function(highlights, integration_name)
   end
 
   -- transparency
-  if config.ui.transparency then
+  if config.based.transparency then
     local glassy = require "based.glassy"
 
     for key, value in pairs(glassy) do
@@ -82,8 +82,8 @@ M.extend_default_hl = function(highlights, integration_name)
     end
   end
 
-  if config.ui.hl_override then
-    local overriden_hl = M.turn_str_to_color(config.ui.hl_override)
+  if config.based.hl_override then
+    local overriden_hl = M.turn_str_to_color(config.based.hl_override)
 
     for key, value in pairs(overriden_hl) do
       if highlights[key] then
@@ -161,16 +161,16 @@ M.load_all_highlights = function()
 end
 
 M.override_theme = function(default_theme, theme_name)
-  local changed_themes = config.ui.changed_themes
+  local changed_themes = config.based.changed_themes
   return M.merge_tb(default_theme, changed_themes.all or {}, changed_themes[theme_name] or {})
 end
 
 M.toggle_transparency = function()
-  config.ui.transparency = not config.ui.transparency
+  config.based.transparency = not config.based.transparency
   M.load_all_highlights()
 
-  local old_transparency_val = dofile(vim.fn.stdpath "config" .. "/lua/otsuui.lua").ui.transparency
-  local new_transparency_val = "transparency = " .. tostring(config.ui.transparency)
+  local old_transparency_val = dofile(vim.fn.stdpath "config" .. "/lua/otsuui.lua").based.transparency
+  local new_transparency_val = "transparency = " .. tostring(config.based.transparency)
   require("otsuui.utils").replace_word("transparency = " .. tostring(old_transparency_val), new_transparency_val)
 end
 
