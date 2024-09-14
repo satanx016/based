@@ -17,6 +17,7 @@ local integrations = {
 	"telescope",
 	"whichkey",
 	"neogit",
+	"notify",
 }
 
 for _, value in ipairs(config.based.integrations) do
