@@ -16,6 +16,7 @@ local integrations = {
 	"otsutab",
 	"telescope",
 	"whichkey",
+	"neogit",
 }
 
 for _, value in ipairs(config.based.integrations) do
