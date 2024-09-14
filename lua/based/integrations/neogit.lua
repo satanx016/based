@@ -1,5 +1,5 @@
 local colors = require("based").get_theme_tb("base_30")
-local lighten_col = require("base.colors").change_hex_lightness
+local lighten_col = require("based.colors").change_hex_lightness
 
 local highligths = {
 	NeogitGraphAuthor = { fg = colors.orange },
