@@ -1,6 +1,8 @@
 local colors = require("based").get_theme_tb("base_30")
 
 return {
+	NotifyBackground = { bg = colors.darker_black },
+
 	NotifyERRORBorder = { fg = colors.red },
 	NotifyERRORIcon = { fg = colors.red },
 	NotifyERRORTitle = { fg = colors.red },
