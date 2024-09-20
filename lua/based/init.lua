@@ -171,9 +171,9 @@ M.toggle_transparency = function()
 	config.based.transparency = not config.based.transparency
 	M.load_all_highlights()
 
-	local old_transparency_val = dofile(vim.fn.stdpath("config") .. "/lua/otsuui.lua").based.transparency
+	local old_transparency_val = dofile(vim.fn.stdpath("config") .. "/lua/otsu-ui.lua").based.transparency
 	local new_transparency_val = "transparency = " .. tostring(config.based.transparency)
-	require("otsuui.utils").replace_word("transparency = " .. tostring(old_transparency_val), new_transparency_val)
+	require("otsu-ui.utils").replace_word("transparency = " .. tostring(old_transparency_val), new_transparency_val)
 end
 
 return M
