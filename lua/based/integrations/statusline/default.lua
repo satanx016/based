@@ -65,7 +65,7 @@ local M = {
 
 	St_pos_sep = {
 		fg = colors.lightbg,
-		bg = colors.statusline_bg,
+		bg = statusline_bg,
 	},
 
 	St_pos_icon = {
