@@ -3,9 +3,9 @@ local colorize = require("based.colors").change_hex_lightness
 
 return {
 	-- LSP References
-	LspReferenceText = { fg = colors.darker_black, bg = colors.white },
-	LspReferenceRead = { fg = colors.darker_black, bg = colors.white },
-	LspReferenceWrite = { fg = colors.darker_black, bg = colors.white },
+	LspReferenceText = { bg = colors.one_bg },
+	LspReferenceRead = { bg = colors.one_bg },
+	LspReferenceWrite = { bg = colors.one_bg },
 
 	-- Lsp Diagnostics
 	DiagnosticHint = { fg = colors.purple },
