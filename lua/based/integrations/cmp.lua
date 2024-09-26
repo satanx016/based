@@ -8,6 +8,7 @@ local highlights = {
 	CmpDocBorder = { fg = colors.darker_black, bg = colors.darker_black },
 	CmpPmenu = { bg = colors.black },
 	CmpSel = { link = "PmenuSel", bold = true },
+	CmpGhostText = { link = "Comment" },
 }
 
 local item_kinds = {
