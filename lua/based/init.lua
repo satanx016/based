@@ -18,6 +18,7 @@ local integrations = {
 	"whichkey",
 	"neogit",
 	"notify",
+	"semantic_tokens",
 }
 
 for _, value in ipairs(config.based.integrations) do
