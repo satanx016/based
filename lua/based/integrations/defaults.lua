@@ -76,8 +76,7 @@ local defaults = {
 	},
 
 	IncSearch = {
-		fg = theme.base01,
-		bg = theme.base09,
+		link = "CurSearch",
 	},
 
 	Italic = {
@@ -101,8 +100,7 @@ local defaults = {
 	},
 
 	Search = {
-		fg = theme.base01,
-		bg = theme.base0A,
+		link = "MatchWord",
 	},
 
 	Substitute = {
