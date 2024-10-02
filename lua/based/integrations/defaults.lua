@@ -246,7 +246,7 @@ local defaults = {
 -- merge statusilne & hl_add tables!
 local merge_tb = require("based").merge_tb
 
-local user_new_highlights = require("nvconfig").based.hl_add
+local user_new_highlights = Otsuvim.config.based.hl_add
 
 if user_new_highlights then
 	local hexify_ColorStrs = require("based").turn_str_to_color

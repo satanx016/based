@@ -1,6 +1,6 @@
 local colors = require("based").get_theme_tb("base_30")
 
-local telescope_style = require("nvconfig").ui.telescope.style
+local telescope_style = Otsuvim.config.ui.telescope.style
 
 local hlgroups = {
 

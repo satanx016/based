@@ -1,4 +1,4 @@
-local theme = require("nvconfig").ui.statusline.theme
+local theme = Otsuvim.config.ui.statusline.theme
 
 if theme == "custom" then
 	return {}

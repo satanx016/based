@@ -1,7 +1,5 @@
 local colors = require("based").get_theme_tb("base_30")
 
-local config = require("nvconfig")
-
 local highlights = {
 
 	OtbFill = {
@@ -73,7 +71,7 @@ local hlgroups_glassy = {
 	"OtbBufOffModified",
 }
 
-if config.based.transparency then
+if Otsuvim.config.based.transparency then
 	for _, val in ipairs(hlgroups_glassy) do
 		highlights[val].bg = "NONE"
 	end

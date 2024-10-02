@@ -1,5 +1,5 @@
 local M = {}
-local config = require("nvconfig")
+local config = Otsuvim.config
 
 local integrations = {
 	"blankline",
