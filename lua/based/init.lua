@@ -168,13 +168,4 @@ M.override_theme = function(default_theme, theme_name)
 	return M.merge_tb(default_theme, changed_themes.all or {}, changed_themes[theme_name] or {})
 end
 
-M.toggle_transparency = function()
-	config.based.transparency = not config.based.transparency
-	M.load_all_highlights()
-
-	local old_transparency_val = dofile(vim.fn.stdpath("config") .. "/lua/otsu-ui.lua").based.transparency
-	local new_transparency_val = "transparency = " .. tostring(config.based.transparency)
-	require("otsu-ui.utils").replace_word("transparency = " .. tostring(old_transparency_val), new_transparency_val)
-end
-
 return M
