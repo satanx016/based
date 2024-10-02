@@ -4,8 +4,8 @@ local colors = require("based").get_theme_tb("base_30")
 local highlights = {
 	CmpItemAbbr = { fg = colors.white },
 	CmpItemAbbrMatch = { fg = colors.blue, bold = true },
-	CmpDoc = { bg = colors.darker_black },
-	CmpDocBorder = { fg = colors.darker_black, bg = colors.darker_black },
+	CmpDoc = { bg = colors.black },
+	CmpDocBorder = { fg = colors.grey_fg },
 	CmpPmenu = { bg = colors.black },
 	CmpSel = { link = "PmenuSel", bold = true },
 	CmpGhostText = { link = "Comment" },
