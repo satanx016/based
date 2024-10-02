@@ -55,26 +55,6 @@ local styles = {
 		CmpBorder = { fg = colors.grey_fg },
 	},
 
-	atom = {
-		CmpItemMenu = { fg = colors.light_grey, italic = true },
-		CmpPmenu = {
-			bg = colors.black2,
-		},
-
-		CmpDoc = { bg = colors.darker_black },
-		CmpDocBorder = { fg = colors.darker_black, bg = colors.darker_black },
-	},
-
-	atom_colored = {
-		CmpItemMenu = { fg = colors.light_grey, italic = true },
-		CmpPmenu = {
-			bg = colors.black2,
-		},
-
-		CmpDoc = { bg = colors.darker_black },
-		CmpDocBorder = { fg = colors.darker_black, bg = colors.darker_black },
-	},
-
 	flat_light = {
 		CmpPmenu = {
 			bg = colors.black2,
@@ -94,26 +74,6 @@ local styles = {
 		CmpDoc = { bg = colors.black2 },
 	},
 }
-
-local generate_color = require("based.colors").change_hex_lightness
-
--- override item_kind highlights for atom style
-if cmp_ui.style == "atom" then
-	for key, value in pairs(item_kinds) do
-		item_kinds[key] = vim.tbl_deep_extend(
-			"force",
-			value,
-			{ bg = vim.o.bg == "dark" and generate_color(colors.black2, 6) or generate_color(colors.black2, -6) }
-		)
-	end
-end
-
--- override item_kind highlights for atom_colored style
-if cmp_ui.style == "atom_colored" then
-	for key, value in pairs(item_kinds) do
-		item_kinds[key] = { fg = colors.black, bg = generate_color(value.fg, -3), bold = true }
-	end
-end
 
 highlights = vim.tbl_deep_extend("force", highlights, styles[cmp_ui.style] or {})
 highlights = vim.tbl_deep_extend("force", highlights, item_kinds)
