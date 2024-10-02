@@ -140,7 +140,7 @@ M.saveStr_to_cache = function(filename, tb)
 end
 
 M.compile = function()
-	if not vim.loop.fs_stat(vim.g.based_cache) then
+	if not vim.uv.fs_stat(vim.g.based_cache) then
 		vim.fn.mkdir(vim.g.based_cache, "p")
 	end
 
