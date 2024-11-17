@@ -7,59 +7,59 @@ local statusline_bg = Otsuvim.config.based.transparency and "NONE" or colors.sta
 local light_grey = generate_color(colors.light_grey, 8)
 
 if theme_type == "light" then
-	light_grey = generate_color(colors.light_grey, -15)
+  light_grey = generate_color(colors.light_grey, -15)
 end
 
 local M = {
-	StatusLine = {
-		fg = light_grey,
-		bg = statusline_bg,
-	},
+  StatusLine = {
+    fg = light_grey,
+    bg = statusline_bg,
+  },
 
-	StText = {
-		fg = light_grey,
-		bg = statusline_bg,
-	},
+  StText = {
+    fg = light_grey,
+    bg = statusline_bg,
+  },
 
-	-- LSP
-	St_lspError = {
-		fg = colors.red,
-		bg = statusline_bg,
-	},
+  -- LSP
+  St_lspError = {
+    fg = colors.red,
+    bg = statusline_bg,
+  },
 
-	St_lspWarning = {
-		fg = colors.yellow,
-		bg = statusline_bg,
-	},
+  St_lspWarning = {
+    fg = colors.yellow,
+    bg = statusline_bg,
+  },
 
-	St_LspHints = {
-		fg = colors.purple,
-		bg = statusline_bg,
-	},
+  St_LspHints = {
+    fg = colors.purple,
+    bg = statusline_bg,
+  },
 
-	St_Lsp = {
-		fg = colors.green,
-		bg = statusline_bg,
-	},
+  St_Lsp = {
+    fg = colors.green,
+    bg = statusline_bg,
+  },
 
-	St_LspMsg = {
-		fg = colors.red,
-		bg = statusline_bg,
-	},
+  St_LspMsg = {
+    fg = colors.red,
+    bg = statusline_bg,
+  },
 
-	St_cwd = {
-		fg = colors.red,
-		bg = colors.one_bg3,
-	},
+  St_cwd = {
+    fg = colors.red,
+    bg = colors.one_bg3,
+  },
 
-	St_ft = {
-		fg = colors.blue,
-		bg = statusline_bg,
-	},
+  St_ft = {
+    fg = colors.blue,
+    bg = statusline_bg,
+  },
 }
 
 local function genModes_hl(modename, col)
-	M["St_" .. modename .. "Mode"] = { fg = colors[col], bg = colors.one_bg3, bold = true }
+  M["St_" .. modename .. "Mode"] = { fg = colors[col], bg = colors.one_bg3, bold = true }
 end
 
 genModes_hl("Normal", "blue")

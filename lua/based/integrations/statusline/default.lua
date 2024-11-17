@@ -7,101 +7,101 @@ local light_grey = generate_color(colors.light_grey, 8)
 
 local M = {
 
-	StatusLine = {
-		bg = statusline_bg,
-	},
+  StatusLine = {
+    bg = statusline_bg,
+  },
 
-	St_gitIcons = {
-		fg = light_grey,
-		bg = statusline_bg,
-		bold = true,
-	},
+  St_gitIcons = {
+    fg = light_grey,
+    bg = statusline_bg,
+    bold = true,
+  },
 
-	St_Lsp = {
-		fg = colors.nord_blue,
-		bg = statusline_bg,
-	},
+  St_Lsp = {
+    fg = colors.nord_blue,
+    bg = statusline_bg,
+  },
 
-	St_LspMsg = {
-		fg = colors.green,
-		bg = statusline_bg,
-	},
+  St_LspMsg = {
+    fg = colors.green,
+    bg = statusline_bg,
+  },
 
-	St_EmptySpace = {
-		fg = colors.grey,
-		bg = colors.lightbg,
-	},
+  St_EmptySpace = {
+    fg = colors.grey,
+    bg = colors.lightbg,
+  },
 
-	St_file = {
-		bg = colors.lightbg,
-		fg = colors.white,
-	},
+  St_file = {
+    bg = colors.lightbg,
+    fg = colors.white,
+  },
 
-	St_file_sep = {
-		fg = colors.lightbg,
-		bg = statusline_bg,
-	},
+  St_file_sep = {
+    fg = colors.lightbg,
+    bg = statusline_bg,
+  },
 
-	St_EmptySpace2 = {
-		fg = colors.grey,
-		bg = colors.lightbg,
-	},
+  St_EmptySpace2 = {
+    fg = colors.grey,
+    bg = colors.lightbg,
+  },
 
-	St_cwd_icon = {
-		fg = colors.one_bg,
-		bg = colors.nord_blue,
-	},
+  St_cwd_icon = {
+    fg = colors.one_bg,
+    bg = colors.nord_blue,
+  },
 
-	St_cwd_text = {
-		fg = colors.black,
-		bg = colors.nord_blue,
-	},
+  St_cwd_text = {
+    fg = colors.black,
+    bg = colors.nord_blue,
+  },
 
-	St_cwd_sep = {
-		fg = colors.nord_blue,
-		bg = colors.grey,
-	},
+  St_cwd_sep = {
+    fg = colors.nord_blue,
+    bg = colors.grey,
+  },
 
-	St_pos_sep = {
-		fg = colors.lightbg,
-		bg = statusline_bg,
-	},
+  St_pos_sep = {
+    fg = colors.lightbg,
+    bg = statusline_bg,
+  },
 
-	St_pos_icon = {
-		fg = colors.green,
-		bg = colors.lightbg,
-	},
+  St_pos_icon = {
+    fg = colors.green,
+    bg = colors.lightbg,
+  },
 
-	St_pos_text = {
-		fg = colors.green,
-		bg = colors.lightbg,
-	},
+  St_pos_text = {
+    fg = colors.green,
+    bg = colors.lightbg,
+  },
 
-	-- lsp highlights
-	St_lspError = {
-		fg = colors.red,
-		bg = statusline_bg,
-	},
+  -- lsp highlights
+  St_lspError = {
+    fg = colors.red,
+    bg = statusline_bg,
+  },
 
-	St_lspWarning = {
-		fg = colors.yellow,
-		bg = statusline_bg,
-	},
+  St_lspWarning = {
+    fg = colors.yellow,
+    bg = statusline_bg,
+  },
 
-	St_LspHints = {
-		fg = colors.purple,
-		bg = statusline_bg,
-	},
+  St_LspHints = {
+    fg = colors.purple,
+    bg = statusline_bg,
+  },
 
-	St_LspInfo = {
-		fg = colors.green,
-		bg = statusline_bg,
-	},
+  St_LspInfo = {
+    fg = colors.green,
+    bg = statusline_bg,
+  },
 }
 
 local function genModes_hl(modename, col)
-	M["St_" .. modename .. "Mode"] = { fg = colors.black, bg = colors[col], bold = true }
-	M["St_" .. modename .. "ModeSep"] = { fg = colors[col], bg = colors.grey }
+  M["St_" .. modename .. "Mode"] = { fg = colors.black, bg = colors[col], bold = true }
+  M["St_" .. modename .. "ModeSep"] = { fg = colors[col], bg = colors.grey }
 end
 
 genModes_hl("Normal", "nord_blue")

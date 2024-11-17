@@ -1,7 +1,7 @@
 local theme = Otsuvim.config.ui.statusline.theme
 
 if theme == "custom" then
-	return {}
+  return {}
 end
 
 local theme_module = "based.integrations.statusline." .. theme

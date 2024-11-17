@@ -2,23 +2,23 @@ local colors = require("based").get_theme_tb("base_30")
 local colorize = require("based.colors").change_hex_lightness
 
 return {
-	-- LSP References
-	LspReferenceText = { bg = colors.one_bg },
-	LspReferenceRead = { bg = colors.one_bg },
-	LspReferenceWrite = { bg = colors.one_bg },
+  -- LSP References
+  LspReferenceText = { bg = colors.one_bg },
+  LspReferenceRead = { bg = colors.one_bg },
+  LspReferenceWrite = { bg = colors.one_bg },
 
-	-- Lsp Diagnostics
-	DiagnosticHint = { fg = colors.purple },
-	DiagnosticError = { fg = colors.red },
-	DiagnosticWarn = { fg = colors.yellow },
-	DiagnosticInfo = { fg = colors.green },
-	LspSignatureActiveParameter = { fg = colors.black, bg = colors.green },
+  -- Lsp Diagnostics
+  DiagnosticHint = { fg = colors.purple },
+  DiagnosticError = { fg = colors.red },
+  DiagnosticWarn = { fg = colors.yellow },
+  DiagnosticInfo = { fg = colors.green },
+  LspSignatureActiveParameter = { fg = colors.black, bg = colors.green },
 
-	RenamerTitle = { fg = colors.black, bg = colors.red },
-	RenamerBorder = { fg = colors.red },
+  RenamerTitle = { fg = colors.black, bg = colors.red },
+  RenamerBorder = { fg = colors.red },
 
-	LspInlayHint = {
-		bg = colorize(colors.black2, vim.o.bg == "dark" and 0 or 3),
-		fg = colors.light_grey,
-	},
+  LspInlayHint = {
+    bg = colorize(colors.black2, vim.o.bg == "dark" and 0 or 3),
+    fg = colors.light_grey,
+  },
 }
