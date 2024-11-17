@@ -1,5 +1,5 @@
 local theme = require("based").get_theme_tb("base_16")
-local base30 = require("based").get_theme_tb("base_30")
+local colors = require("based").get_theme_tb("base_30")
 
 return {
 
@@ -76,15 +76,15 @@ return {
   ["@markup.underline"] = { underline = true },
   ["@markup.italic"] = { italic = true },
   ["@markup.strikethrough"] = { strikethrough = true },
-  ["@markup.quote"] = { bg = base30.black2 },
+  ["@markup.quote"] = { bg = colors.black2 },
 
-  ["@comment"] = { fg = base30.grey_fg, italic = true },
-  ["@comment.todo"] = { fg = base30.grey, bg = base30.white },
-  ["@comment.warning"] = { fg = base30.black2, bg = theme.base09 },
-  ["@comment.note"] = { fg = base30.black2, bg = base30.white },
-  ["@comment.danger"] = { fg = base30.black2, bg = base30.red },
+  ["@comment"] = { fg = colors.grey_fg, italic = true },
+  ["@comment.todo"] = { fg = colors.grey, bg = colors.white },
+  ["@comment.warning"] = { fg = colors.black2, bg = theme.base09 },
+  ["@comment.note"] = { fg = colors.black2, bg = colors.white },
+  ["@comment.danger"] = { fg = colors.black2, bg = colors.red },
 
-  ["@diff.plus"] = { fg = base30.green },
-  ["@diff.minus"] = { fg = base30.red },
-  ["@diff.delta"] = { fg = base30.light_grey },
+  ["@diff.plus"] = { fg = colors.green },
+  ["@diff.minus"] = { fg = colors.red },
+  ["@diff.delta"] = { fg = colors.light_grey },
 }

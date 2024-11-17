@@ -1,5 +1,4 @@
-local get_theme_tb = require("based").get_theme_tb
-local colors = get_theme_tb("base_30")
+local colors = require("based").get_theme_tb("base_30")
 local generate_color = require("based.colors").change_hex_lightness
 
 local statusline_bg = Otsuvim.config.based.transparency and "NONE" or colors.statusline_bg

@@ -1,8 +1,6 @@
-local get_theme_tb = require("based").get_theme_tb
-local colors = get_theme_tb("base_30")
-local generate_color = require("based.colors").change_hex_lightness
+local colors = require("based").get_theme_tb("base_30")
 
-local light_grey = generate_color(colors.light_grey, 8)
+local light_grey = require("based.colors").change_hex_lightness(colors.light_grey, 8)
 
 local M = {
   StatusLine = {
