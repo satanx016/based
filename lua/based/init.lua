@@ -19,6 +19,7 @@ local integrations = {
   "neogit",
   "notify",
   "semantic_tokens",
+  "neorg",
 }
 
 for _, value in ipairs(config.based.integrations) do
