@@ -13,7 +13,7 @@ local integrations = {
   "statusline",
   "syntax",
   "treesitter",
-  "otsutab",
+  "tufline",
   "telescope",
   "whichkey",
   "neogit",
