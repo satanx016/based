@@ -61,7 +61,6 @@ M.polish_hl = {
     WhichKey = { fg = M.base_30.white },
   },
 
-  -- IndentBlanklineContextStart = { bg = M.base_30.black2 },
   statusline = {
     St_pos_text = { fg = M.base_30.white },
   },

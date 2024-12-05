@@ -72,7 +72,6 @@ M.polish_hl = {
   defaults = {
     Pmenu = { bg = M.base_30.black2 },
   },
-  -- IndentBlanklineContextStart = { bg = M.base_30.black2 },
 
   statusline = {
     St_pos_text = { fg = M.base_30.white },

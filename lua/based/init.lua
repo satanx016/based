@@ -2,7 +2,7 @@ local M = {}
 local config = Otsuvim.config
 
 local integrations = {
-  "blankline",
+  "hlchunk",
   "cmp",
   "defaults",
   "devicons",
@@ -157,11 +157,6 @@ M.load_all_highlights = function()
   for _, filename in ipairs(integrations) do
     dofile(vim.g.based_cache .. filename)
   end
-
-  -- update blankline
-  pcall(function()
-    require("ibl").update()
-  end)
 end
 
 M.override_theme = function(default_theme, theme_name)
