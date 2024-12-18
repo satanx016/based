@@ -2,24 +2,24 @@ local M = {}
 local config = Otsuvim.config
 
 local integrations = {
-  "hlchunk",
+  "statusline",
   "cmp",
   "defaults",
   "devicons",
   "git",
+  "hlchunk",
   "lsp",
   "mason",
+  "neogit",
+  "neorg",
+  "notify",
   "nvimtree",
-  "statusline",
+  "semantic_tokens",
   "syntax",
+  "telescope",
   "treesitter",
   "tufline",
-  "telescope",
   "whichkey",
-  "neogit",
-  "notify",
-  "semantic_tokens",
-  "neorg",
 }
 
 for _, value in ipairs(config.based.integrations) do
