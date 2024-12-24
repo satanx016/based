@@ -4,6 +4,7 @@ local config = Otsuvim.config
 local integrations = {
   "statusline",
   "cmp",
+  "dash",
   "defaults",
   "devicons",
   "git",
