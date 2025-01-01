@@ -2,6 +2,7 @@ local theme = require("based").get_theme_tb("base_16")
 local colors = require("based").get_theme_tb("base_30")
 
 return {
+  ["@namespace.builtin"] = { fg = colors.baby_pink },
 
   ["@variable"] = { fg = theme.base05 },
   ["@variable.builtin"] = { fg = theme.base09 },
