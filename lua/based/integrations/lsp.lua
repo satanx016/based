@@ -12,6 +12,10 @@ return {
   DiagnosticError = { fg = colors.red },
   DiagnosticWarn = { fg = colors.yellow },
   DiagnosticInfo = { fg = colors.green },
+  DiagnosticUnderlineHint = { undercurl = true, sp = colors.purple },
+  DiagnosticUnderlineError = { undercurl = true, sp = colors.red },
+  DiagnosticUnderlineWarn = { undercurl = true, sp = colors.yellow },
+  DiagnosticUnderlineInfo = { undercurl = true, sp = colors.green },
   LspSignatureActiveParameter = { fg = colors.black, bg = colors.green },
 
   RenamerTitle = { fg = colors.black, bg = colors.red },
